@@ -14,7 +14,7 @@ body {
 }
 
 .reveal {
-  font-family: "Titillium Web", Helvetica, serif;
+  font-family: "Titillium Web", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -54,7 +54,7 @@ li:before {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #272727;
-  font-family: "Titillium Web", Helvetica, serif;
+  font-family: "Titillium Web", Helvetica, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
