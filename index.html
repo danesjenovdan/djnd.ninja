@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Postani DJND Ninja!</title>
+		<meta name="description" content="Prijavi se in postani DJND Ninja!" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Danes je nov dan, Inštitut za druga vprašanja" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,600,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<p><i class="fa fa-arrow-left"></i> <a class="codrops-icon" href=""><span>Nazaj na predstavitev DJND Ninja programa</a></p>
+			</div>
+			<header class="codrops-header">
+				<h1>POSTANI DJND NINJA</h1>	
+			</header>
+			<section>
+				<form id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1">Ime</label></span>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<span><label for="q2">Priimek</label></span>
+								<input id="q2" name="q2" type="text"/>
+							</li>
+							<li>
+								<span><label for="q3">Email</label></span>
+								<input id="q3" name="q3" type="text"/>
+							</li>
+							<li>
+								<span><label for="q4">Kaj se želiš naučiti?</label></span>
+								<input id="q4" name="q4" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">ODDAJ!</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->			
+			</section>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Hvala za tvojo prijavo! Kmalu ti javimo, kako lahko postaneš DJND Ninja!';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+	</body>
+</html>
