@@ -1,0 +1,34 @@
+body {
+}
+
+.row2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+    
+
+}
+h1{
+    border color: black;
+    border-width: medium;
+    border-radius: 25%;
+    border-style: solid;
+    padding: 20px;
+}
+.row3{
+    padding-bottom: 70px;
+}
+.row1{
+    padding-top: 300px;
+    padding-bottom: 400px;
+}
+.row4{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.rectangle{
+    width: 300px;
+    height: 100px;
+    display: block;
+    background-color: aqua;
+}
