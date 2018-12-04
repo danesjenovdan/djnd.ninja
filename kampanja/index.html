@@ -1,152 +1,240 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="SI">
 
 <head>
+    <meta name="theme-color" content="#000000">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Starter Template for Bootstrap 3.3.4</title>
+    <title>Slep splet</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css" </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>	
+	<link rel="shortcut icon" href="img/favicon.ico">
 
-    <body>
-        <div class="container">
-            <div class="row3">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1.0">
+
+    <meta property="og:title" content="Slep splet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Vse je na internetu. Ni pa za vse. Kdo slepim najbolj otežuje spletno izkušnjo in kaj lahko storite vi, da bo ta postala prijaznejša in bolj vključujoča?" />
+    <meta property="og:image" content="img/ogimage.png" />
+    <meta property="og:url" content="http://slepa.djnd.ninja" />
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="videocontainer" id="videocontroller">
+    </div>
+
+    <div class="navigation" aria-hidden="true">
+        <div class="bottomtext">
+            <span>To ni osamljen primer ...</span>
+        </div>
+        <div class="arrow"></div>
+    </div>
+
+    <div class="jumbo jfirst">
+        <div class="container-fluid playcontainer">
+            <div class="logo"></div>
+            <div class="row aboveplay">
                 <div class="col-xs-12">
-                    <center>
-                        <h1>Internet je za vse</h1>
-                    </center>
+                    <h1>Vse je na internetu.<br>Ni pa za vse.</h1>
                 </div>
             </div>
+            <div style="margin-top:50px" class="playbutton" data-id="-pybYrnhh_w"></div>
+        </div>
+    </div>
+    <div class="jumbo jsecond">
+        <div class="container">
+            <div class="row tretjinka" style="margin-top:40px">
+                <div class="hidden-xs col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-2">
+                    <img class="img-responsive" src="img/slepi.png" alt="Vizualizacija razmerja med slepimi in Mihi.">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <p>Poznate kakega Miha? V Sloveniji je nekaj več kot 9000 oseb po imenu Miha. V Sloveniji je približno 10 000 slepih. Poznate kakšno slepo osebo? Zanimivo, huh?</p>
+                </div>
+            </div>
+            <div class="row tretjinka">
+                <div class="hidden-xs col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-2">
+                    <p>Trenutno je v Sloveniji približno 150 slepih mulcev, mlajših od 15 let. To je za skoraj 3 avtobuse otrok, ki so skoraj povsem izključeni iz okolja, brez katerega si njihovi vrstniki ne znajo predstavljati ne šolskega ne kateregakoli drugega udejstvovanja.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img class="img-responsive" style="margin-left:100px;" src="img/busi.png" alt="Slika treh šolskih avtobusov.">
+                </div>
+            </div>
+            <div class="row tretjinka">
+                <div class="hidden-xs col-sm-5 col-md-4 col-sm-offset-1 col-md-offset-2">
+                    <canvas class="chart" id="drzave"></canvas>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-4">
+                    <p>Na svetu vsaj 285 000 000 ljudi ne more doživeti celovite spletne izkušnje zaradi slepote ali resne slabovidnosti. Če bi ustanovili svojo državo, bi bila ta 4. največja na svetu glede na populacijo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <div class="row4">
+    <div class="jumbo jthird">
+        <div class="container-fluid playcontainer">
+            <div class="row aboveplay">
                 <div class="col-xs-12">
-                    <center>
-                        <p>Tukaj rabimo 2 stavka uvnodnega nagovora. </p>
-                    </center>
+                    <h1>Na spletu so slepi tudi nemi.</h1>
                 </div>
             </div>
-            <div class="row3">
-                <div class="col-xs-12 col12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-                    </div>
-                    <center>
-                        <p>Izvej več/To je resen problem</p>
-                    </center>
+            <div style="margin-top:50px" class="playbutton" data-id="d4oVEknWVFE"></div>
+        </div>
+    </div>
+
+    <div class="jumbo">
+        <div class="container col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+            <p style="padding-top: 30px;font-size:14px; line-height:24px;">Testirali smo deset spletnih mest slovenskih medijev z največjim dosegom - torej tistih, katerih neurejenost težave povzroča največ slepim osebam v državi. Upoštevali smo tri glavne aspekte prilagojenosti slepim in slabovidnim: semantičnost in urejenost kode, stopnje barvnih kontrastov in uporabo standarda ARIA, ki je namenjen predvsem prilagoditvi za bralnike zaslona.
+Posamezni rezultati niso ključni; pomembno je opozoriti na dejstvo, da so popolnoma vsi največji slovenski mediji na omenjenih testih tako rekoč pogoreli.</p>
+            <div class="table-responsive">
+                <table class="table">
+<!--
+                    <caption>Primerjava indeksov dostopnosti najbolj obiskanih slovenskih spletnih medijev</caption>
+                    <summary>Testirali smo deset spletnih mest slovenskih medijev z največjim dosegom - torej tistih, katerih neurejenost težave povzroča največ slepim osebam v državi. Najbolj zaskrbljujoče je dejstvo, da še niti eden iz seznama ne uporablja sodobnega HTML5 standarda ARIA, ki je namenjen predvsem prilagoditvi spletnih mest bralnikom zaslona.</summary>
+-->
+                    <tr>
+                        <th>Spletno mesto</th>
+                        <th style="text-align:right">Doseg po MOSS</th>
+                        <th style="text-align:right">iAM<a style="color: #db0059;" href="
+http://www.acessibilidade.gov.pt/accessmonitor/"> (?)</a></th>
+                        <td style="text-align:right">Neprimeren kontrast <a style="color: #db0059;" href="http://www.checkmycolours.com/"> (?)</a></th>
+                        <td style="text-align:right">ARIA<a style="color: #db0059;" href="http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria"> (?)</a>
+						<td style="text-align:center">Angažiraj se!</td></th>
+                        <!--                    <td>Skupna ocena</td>-->
+                    </tr>
+                    <tr>
+                        <td>24ur.com</td>
+                        <td style="text-align:right">680 390</td>
+                        <td style="text-align:right">4,0</td>
+                       <td style="text-align:right">510/2773</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:24ur.com@pop-tv.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>siol.net</td>
+                        <td style="text-align:right">537 143</td>
+                        <td style="text-align:right">4,4</td>
+                       <td style="text-align:right">230/1665</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:info@tsmedia.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>slovenskenovice.si</td>
+                        <td style="text-align:right">523 608</td>
+                        <td style="text-align:right">4,6</td>
+                        <td style="text-align:right">280/1800</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:info@slovenskenovice.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>rtvslo.si</td>
+                        <td style="text-align:right">430 050</td>
+                        <td style="text-align:right">3,2</td>
+                        <td style="text-align:right">731/2536</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:MMC-uredniki@rtvslo.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>med.over.net</td>
+                        <td style="text-align:right">389 226</td>
+                        <td style="text-align:right">5,3</td>
+                        <td style="text-align:right">165/608</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:med@over.net?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>zurnal24.si</td>
+                        <td style="text-align:right">335 619</td>
+                        <td style="text-align:right">4,0</td>
+                        <td style="text-align:right">140/842</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:dezurni@zurnal24.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>delo.si</td>
+                        <td style="text-align:right">247 853</td>
+                        <td style="text-align:right">3,3</td>
+                        <td style="text-align:right">153/2196</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="urednistvo@delo.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>zadovoljna.si</td>
+                        <td style="text-align:right">240 695</td>
+                        <td style="text-align:right">4,1</td>
+                        <td style="text-align:right">421/933</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="mailto:zadovoljna@pop-tv.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+<button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>moskisvet.com</td>
+                        <td style="text-align:right">218 660</td>
+                       <td style="text-align:right">4,0</td>
+                        <td style="text-align:right">498/1169</td>
+                       <td style="text-align:right">x</td>
+					   	<td><a href="mailto:moskisvet@pop-tv.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+ <button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                    <tr>
+                        <td>okusno.je</td>
+                        <td style="text-align:right">216 514</td>
+                       <td style="text-align:right">3,5</td>
+                        <td style="text-align:right">1133/2236</td>
+                        <td style="text-align:right">x</td>
+						<td><a href="okusno@pop-tv.si?subject=Slep%20splet&body=Sporo%C4%8Dam+vam%2C+da+ste+pomembno+soodgovorni+za+izklju%C4%8Dujo%C4%8Do+spletno+izku%C5%A1njo+slepih.+Pozivam+vas%2C+da+svoje+spletno+mesto+posodobite+po+najnovej%C5%A1ih+vklju%C4%8Dujo%C4%8Dih+spletnih+standardih.Vse+je+na+internetu.+Ni+pa+za+vse.%20http%3A%2F%2Fslepa.djnd.ninja">
+ <button class="btnz zahtevajs" style="text-decoration: none;">Zahtevaj spremembo!</button></a></td>
+                        <!--                    <td></td>-->
+                    </tr>
+                </table>
+            </div>
+
+		   <div class="row">
+                <div class="text-center" class="col-xs-12" style="margin-bottom: 10px;">
+                    <button tabindex="0" style="margin-right:5px;" class="btn fb">Deli na FB</button>
+                    <button tabindex="0" style="margin-left:5px;" class="btn tw">Deli na TW</button>
                 </div>
+				</div>
             </div>
         </div>
-        <div class="container">
-            <div class="row2">
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-            </div>
-            <hr>
-            <div class="row2">
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-            </div>
-            <hr>
-            <div class="row2">
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-                <div class="col-xs-6">
-                    <img class="img-responsive  center-block" src="img/Brez%20naslova.jpg" width="40%">
-                </div>
-            </div>
-        </div>
+    </div>
 
 
-
-        <div class="container">
-            <div class="row1">
-                <div class="col-xs-12"></div>
-                <center>
-                    <p>Whatever</p>
-                </center>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="col-xs-12">
-                <center>
-                    <p>blaaaaaaaa.</p>
-                </center>
-            </div>
-            <div class="row2">
-                <div class="col-xs-12">
-                    <center>
-                        <span>D INDEX = obiskanot*semantičnost*kontrast*ARIA</span>
-                    </center>
-                </div>
-            </div>
-
-            <div class="col-xs-12">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          delo.si
-        </a>
-      </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                blablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalbla
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          dnevnik.si
-        </a>
-      </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                blablalblalblalblalblablalblalblal lalbla blablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalbla
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          24ur.si
-        </a>
-      </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                blablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalblablablalblalblalblalblablalblalblal lalbla
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 
 </html>
